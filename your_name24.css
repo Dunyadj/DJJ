@@ -7,7 +7,7 @@ body {
 
 
 header {
-    background-color: #ff0606;
+    background-color: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -29,7 +29,7 @@ h1 {
 }
 
 #nymap {
-    height: 650px;
+    height: 400px;
     width: 80%;
     margin: 20px auto;
 }
@@ -58,11 +58,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-.leaflet-attribution-flag {
-display: inline !important;
-vertical-align: baseline !important;
-width: 0;
-height: 0;
 }
