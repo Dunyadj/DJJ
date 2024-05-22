@@ -20,35 +20,6 @@ luigismarker.bindPopup(`
 `).openPopup();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Load the GeoJSON line file
 fetch('https://Dj3.github.io/Dj3/dunyadj_daytimeroute.geojson')
     .then(response => response.json())
