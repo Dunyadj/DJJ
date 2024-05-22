@@ -7,6 +7,31 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
+// Add a marker to the map for New York City
+var omoniacafemarker = L.marker([40.630400501079464, -74.02831268679124]).addTo(map);
+
+
+// Add a popup to the marker
+prattinstmarker.bindPopup(`
+    <b>Pratt Institute</b><br>Sculpture Garden and green space <br>
+    <img src="https://aurashktest.github.io/aurashktest/images/pratt.jpg" style="width: 100px; height: auto;">
+`).openPopup();
+
+
+
+
+// Add a marker to the map for New York City
+var pierparkmarker = L.marker([40.639205771864646, -74.03727450611335]).addTo(map);
+
+
+// Add a popup to the marker
+ftgreeneparkmarker.bindPopup(`
+    <b>Ft Greene Park</b><br>Prison Ship Martrys Monument has good views of the city.<br>
+    <img src="https://aurashktest.github.io/aurashktest/images/psm.jpg"  style="width: 100px; height: auto;">
+`).openPopup();
+
+
+
 
 
 
