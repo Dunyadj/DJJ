@@ -39,3 +39,25 @@ fetch('https://Dj3.github.io/Dj3/dunyadj_daytimeroute.geojson')
     .catch(error => {
         console.error('Error loading GeoJSON file:', error);
     });
+
+
+ // Load the GeoJSON line file
+fetch('https://aurashktest.github.io/aurashktest/akeveningroute.geojson')
+.then(response => response.json())
+.then(geojson => {
+    // Customize the style of the line
+    var lineStyle = {
+        color: 'blue', // Change color as needed
+        weight: 5, // Change weight as needed
+        opacity: 0.7 // Change opacity as needed
+    };
+
+    // Add the GeoJSON line to the map
+    L.geoJSON(geojson, {
+        style: lineStyle
+    }).addTo(map);
+})
+.catch(error => {
+    console.error('Error loading GeoJSON file:', error);
+});
+
