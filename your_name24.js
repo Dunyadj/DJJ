@@ -21,7 +21,7 @@ luigismarker.bindPopup(`
 
 
 // Load the GeoJSON line file
-fetch('https://DJJ.github.io/DJJ/dunyadj_daytimeroute.geojson')
+fetch('https://Dunyadj.github.io/Dunyadj/dunyadj_daytimeroute.geojson')
     .then(response => response.json())
     .then(geojson => {
         // Customize the style of the line
@@ -42,7 +42,7 @@ fetch('https://DJJ.github.io/DJJ/dunyadj_daytimeroute.geojson')
 
 
  // Load the GeoJSON line file
-fetch('https://DJJ.github.io/DJJ/nighttimewalk.geojson')
+fetch('https://Dunyadj.github.io/Dunyadj/nighttimewalk.geojson')
 .then(response => response.json())
 .then(geojson => {
     // Customize the style of the line
