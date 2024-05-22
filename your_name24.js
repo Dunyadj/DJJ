@@ -18,3 +18,53 @@ luigismarker.bindPopup(`
     <b>Pizza wagon Pizza</b><br>Best pizza on 86st<br>
     <img src="https://Dunyadj.github.io/aurashktest/images/luigis.png" style="width: 100px; height: auto;">
 `).openPopup();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Load the GeoJSON line file
+fetch('https://Dj3.github.io/Dj3/dunyadj_daytimeroute.geojson')
+    .then(response => response.json())
+    .then(geojson => {
+        // Customize the style of the line
+        var lineStyle = {
+            color: 'green', // Change color as needed
+            weight: 10, // Change weight as needed
+            opacity: 0.7 // Change opacity as needed
+        };
+
+        // Add the GeoJSON line to the map
+        L.geoJSON(geojson, {
+            style: lineStyle
+        }).addTo(map);
+    })
+    .catch(error => {
+        console.error('Error loading GeoJSON file:', error);
+    });
